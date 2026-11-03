@@ -1,0 +1,38 @@
+/* Yönetim tablosu */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: var(--kose);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.table th, .table td { padding: 0.7rem 0.9rem; text-align: left; border-bottom: 1px solid #eee; }
+.table th { background: var(--renk-ana); color: #fff; font-size: 0.9rem; }
+.table tbody tr:nth-child(even) { background: hsl(var(--ton), 30%, 98%); }
+.islemler { display: flex; gap: 0.5rem; }
+
+.btn-kucuk { padding: 0.35rem 0.8rem; font-size: 0.85rem; }
+.btn-sil { background: #d93025; color: #fff; }
+
+/* Telefonda: her satır bir kart */
+@media (max-width: 600px) {
+  .table thead { display: none; }
+  .table, .table tbody, .table tr, .table td { display: block; width: 100%; }
+  .table { border: none; background: transparent; }
+  .table tr {
+    background: #fff !important;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: var(--kose);
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0;
+  }
+  .table td { display: flex; gap: 0.5rem; border-bottom: none; padding: 0.35rem 0.9rem; }
+  .table td::before { content: attr(data-label) ":"; font-weight: 700; min-width: 80px; }
+  .table td.islemler::before { display: none; }
+}
+
+/* Mesaj kutuları */
+.mesaj { padding: 1rem; border-radius: var(--kose); margin-bottom: 1rem; max-width: 550px; }
+.mesaj-basari { background: #def7ec; border: 1px solid #84e1bc; color: #03543f; font-weight: bold; }
+.mesaj-hata { background: #fde8e8; border: 1px solid #f8b4b4; color: #9b1c1c; }

@@ -1,0 +1,225 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+/* Header & Nav */
+.site-baslik {
+  background: white;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-baslik h1 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.site-baslik p {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  background: white;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu button {
+  background: #f1f5f9;
+  color: var(--text-main);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu button:hover {
+  background: #e2e8f0;
+}
+
+.menu button[aria-current="page"] {
+  background: var(--primary);
+  color: white;
+}
+
+/* Ana İçerik */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Filtreler */
+.filtreler {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.filtreler div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.filtreler label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filtreler input, .filtreler select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.filtreler input:focus, .filtreler select:focus {
+  border-color: var(--primary);
+}
+
+/* Kart Yapısı ve Liste */
+.liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.25rem;
+}
+
+.kart {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.kart h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.kart p {
+  margin: 0.35rem 0;
+  font-size: 0.95rem;
+}
+
+.kart button {
+  margin-top: auto;
+  align-self: flex-start;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.kart button:hover {
+  background: var(--primary-hover);
+}
+
+/* Formlar ve Detay Ekranı */
+.form, .detay {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.form form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form input, .form select, .form textarea {
+  padding: 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.form button, .detay button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hata-mesaji {
+  color: #ef4444;
+  font-size: 0.825rem;
+}
+
+.basari-kutusu {
+  margin-top: 1.5rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+}

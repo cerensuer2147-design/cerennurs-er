@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampüs Etkinlikleri</title>
+  <link rel="stylesheet" href="../2416501041.css">
+</head>
+<body>
+
+  <header class="ust-header">
+    <h1>Kampüs Etkinlikleri</h1>
+    <p>Fakültedeki seminer, atölye ve söyleşileri tek yerden takip edin.</p>
+    <nav>
+      <a href="index.html" class="aktif">Ana Sayfa</a>
+      <a href="etkinlikler.html">Etkinlikler</a>
+      <a href="etkinlik-ekle.html">Ekle</a>
+    </nav>
+  </header>
+
+  <main class="icerik-alani">
+    <h2>Yaklaşan 2 Etkinlik</h2>
+    <div id="etkinlik-listesi" data-limit="2" class="kart-grid"></div>
+    <br>
+    <a href="etkinlikler.html" class="tum-link">Tüm etkinlikleri gör →</a>
+  </main>
+
+  <script type="module" src="../js/event-list.js"></script>
+</body>
+</html>
