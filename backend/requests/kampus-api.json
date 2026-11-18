@@ -1,4 +1,4 @@
-{
+﻿{
   "info": {
     "_postman_id": "24165010-4100-4000-8000-241650104107",
     "name": "Kampüs API",
@@ -50,7 +50,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3000/events/event-2",
+          "raw": "http://localhost:3000/events/6afd5ab1965e966011fa553d",
           "protocol": "http",
           "host": [
             "localhost"
@@ -58,7 +58,7 @@
           "port": "3000",
           "path": [
             "events",
-            "event-2"
+            "6afd5ab1965e966011fa553d"
           ]
         }
       },
@@ -154,3 +154,4 @@
     }
   ]
 }
+
