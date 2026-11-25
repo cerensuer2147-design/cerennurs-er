@@ -60,7 +60,7 @@
 
                                                 ],
                                      "url":  {
-                                                 "raw":  "http://localhost:3000/events/6b068764e4ffcb4f9ba2d5ca",
+                                                 "raw":  "http://localhost:3000/events/6b068b70248e9070bf05ae15",
                                                  "protocol":  "http",
                                                  "host":  [
                                                               "localhost"
@@ -68,7 +68,7 @@
                                                  "port":  "3000",
                                                  "path":  [
                                                               "events",
-                                                              "6b068764e4ffcb4f9ba2d5ca"
+                                                              "6b068b70248e9070bf05ae15"
                                                           ]
                                              }
                                  },
@@ -113,7 +113,7 @@
                                                 ],
                                      "body":  {
                                                   "mode":  "raw",
-                                                  "raw":  "{\n  \"title\": \"Git Atölyesi\",\n  \"category\": \"Atölye\",\n  \"date\": \"2026-12-01\",\n  \"capacity\": 30,\n  \"time\": \"14:00\",\n  \"location\": \"Bilgisayar Laboratuvarı 1\",\n  \"description\": \"Git ve GitHub ile dal yönetimi.\"\n}",
+                                                  "raw":  "{\r\n    \"title\":  \"Git Atölyesi\",\r\n    \"category\":  \"Atölye\",\r\n    \"date\":  \"01-12-2026\",\r\n    \"capacity\":  30,\r\n    \"time\":  \"14:00\",\r\n    \"location\":  \"Bilgisayar Laboratuvarı 1\",\r\n    \"description\":  \"Git ve GitHub ile dal yönetimi.\"\r\n}",
                                                   "options":  {
                                                                   "raw":  {
                                                                               "language":  "json"
